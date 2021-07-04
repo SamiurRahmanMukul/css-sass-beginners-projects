@@ -1,0 +1,43 @@
+/* import partials file */
+@import "./partials/variable-global";
+@import "./partials/global/global-styles";
+@import "./partials/nav-bar";
+@import "./partials/section-part";
+@import "./partials/aside-part";
+@import "./partials/btn-style";
+@import "./partials/grid-style";
+@import "./partials/footer-style";
+
+/* container */
+.full-container {
+  width: 100%;
+}
+.container {
+  width: 960px;
+  background-color: var(--clr-primary-1);
+  display: block;
+  margin: 0 auto;
+}
+
+/* header part*/
+header {
+  color: var(--clr-white);
+  background-color: var(--clr-primary-8);
+
+  h2 {
+    color: var(--clr-white);
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  /* here perform nav-bar */
+}
+
+/* main part */
+main {
+  display: inline-block;
+
+  // aside part
+
+  // section part
+}

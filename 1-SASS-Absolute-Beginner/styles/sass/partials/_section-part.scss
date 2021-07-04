@@ -1,0 +1,33 @@
+/* mixin */
+@mixin para-style($font-size, $align) {
+  font-size: $font-size !important;
+  text-align: $align;
+}
+
+section {
+  width: 660px;
+  float: left;
+  padding: 10px;
+
+  h3 {
+    font-size: 20px;
+    color: var(--clr-primary-8);
+    text-transform: uppercase;
+  }
+  p {
+    @include para-style(16px, justify);
+
+    span {
+      color: var(--clr-red-dark);
+    }
+    span:hover {
+      font-weight: bold;
+      cursor: pointer;
+      transition: var(--transition-ease);
+      -webkit-transition: var(--transition-ease);
+      -moz-transition: var(--transition-ease);
+      -ms-transition: var(--transition-ease);
+      -o-transition: var(--transition-ease);
+    }
+  }
+}

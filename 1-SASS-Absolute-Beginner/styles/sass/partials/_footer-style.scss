@@ -1,0 +1,49 @@
+@mixin font-size($value) {
+  @if ($value == small) {
+    font-size: small;
+  } @else if ($value == medium) {
+    font-size: medium;
+  } @else if ($value == large) {
+    font-size: large;
+  } @else if ($value == larger) {
+    font-size: larger;
+  } @else {
+    font-size: none;
+  }
+}
+
+footer {
+  background-color: var(--clr-primary-8);
+
+  p {
+    padding-top: 20px;
+    text-align: center;
+    color: var(--clr-white);
+
+    span {
+      color: var(--clr-red-light);
+    }
+    span:hover {
+      text-decoration: underline;
+      cursor: pointer;
+    }
+  }
+
+  a {
+    @include font-size(larger);
+    color: var(--clr-green-dark);
+    text-align: center;
+    display: block;
+    padding-bottom: 20px;
+  }
+  a:hover {
+    font-weight: bold;
+    color: var(--clr-pink);
+    text-decoration: underline;
+    transition: var(--transition-ease);
+    -webkit-transition: var(--transition-ease);
+    -moz-transition: var(--transition-ease);
+    -ms-transition: var(--transition-ease);
+    -o-transition: var(--transition-ease);
+  }
+}

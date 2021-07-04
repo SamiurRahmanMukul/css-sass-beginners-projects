@@ -1,0 +1,26 @@
+.btn {
+  border: none;
+  padding: 15px 30px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+.btn:hover {
+  font-weight: bold;
+  color: var(--clr-red-light);
+  text-decoration: underline;
+  transition: var(--transition-linear);
+  -webkit-transition: var(--transition-linear);
+  -moz-transition: var(--transition-linear);
+  -ms-transition: var(--transition-linear);
+  -o-transition: var(--transition-linear);
+}
+
+.btn-download {
+  @extend .btn;
+  background-color: var(--clr-green-dark);
+}
+.btn-learn-more {
+  @extend .btn;
+  background-color: var(--clr-red-dark);
+}
